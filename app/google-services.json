@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "11416898090",
+    "project_id": "quicky-e3228",
+    "storage_bucket": "quicky-e3228.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11416898090:android:3fcbea965d1525d95dd153",
+        "android_client_info": {
+          "package_name": "com.laurentdarl.quicky"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11416898090-4iue7vmq1u0bun9ber9lb9fev6u22m1j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxTX3NvHJ7mIiJeiPC0xPE9dDatR5edKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11416898090-4iue7vmq1u0bun9ber9lb9fev6u22m1j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
