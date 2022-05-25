@@ -7,20 +7,19 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.laurentdarl.quicky.presentation.activities.main.ui.home.HomeFragment"
+        android:name="com.laurentdarl.quicky.presentation.fragments.registration.container.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" >
+
         <action
-            android:id="@+id/action_nav_home_to_nav_gallery"
-            app:destination="@id/nav_gallery" />
+            android:id="@+id/action_nav_home_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.laurentdarl.quicky.presentation.activities.main.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/mainFragment"
+        android:name="com.laurentdarl.quicky.presentation.fragments.app.home.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
 
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.laurentdarl.quicky.presentation.activities.main.ui.s
+</navigation>

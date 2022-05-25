@@ -3,7 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Quicky/app/src/main/res/drawable-v24/indicator_active_background.xml" value="0.182" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Quicky/app/src/main/res/drawable-v24/view_pager_background.xml" value="0.211" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Quicky/app/src/main/res/layout/activity_main.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Quicky/app/src/main/res/layout/activity_onboarding.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Quicky/app/src/main/res/layout/activity_start_screen.xml" value="0.18958333333333333" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Quicky/app/src/main/res/layout/content_main.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Quicky/app/src/main/res/layout/fragment_home.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Quicky/app/src/main/res/layout/fragment_main.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Quicky/app/src/main/res/layout/fragment_sign_up.xml" value="0.18958333333333333" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Quicky/app/src/main/res/layout/fragment_signin.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Quicky/app/src/main/res/layout/onboarding_item.xml" value="0.20364583333333333" />
       </map>
     </option>
   </component>
