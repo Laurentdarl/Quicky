@@ -20,20 +20,13 @@
         android:id="@+id/btn_skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#74FFFFFF"
+        style="@style/MaterialButton_inactive"
         android:layout_marginBottom="15dp"
         android:layout_marginEnd="15dp"
         android:padding="10dp"
-        android:text="Skip"
-        android:textAllCaps="false"
-        android:textColor="@color/custom_color_text_primary"
-        android:textSize="18sp"
-        android:textStyle="bold|normal"
-        app:cornerRadius="25dp"
+        android:text="@string/skip_button"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:strokeColor="#65F4D77F"
-        app:strokeWidth="1dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <LinearLayout
         android:id="@+id/linear_indicator"
@@ -49,18 +42,12 @@
         android:id="@+id/btn_cta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#CED6F42E"
+        style="@style/MaterialButton_active"
         android:layout_marginBottom="10dp"
         android:layout_marginEnd="15dp"
+        android:contentDescription="@string/cta_onboarding"
         android:padding="15dp"
-        android:text="Next"
-        android:textAllCaps="false"
-        android:textColor="@color/custom_color_text_primary"
-        android:textSize="18sp"
-        android:textStyle="bold|normal"
-        app:cornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:strokeColor="@color/custom_color_primary_light"
-        app:strokeWidth="1dp" />
+         />
 </androidx.constraintlayout.widget.ConstraintLayout>

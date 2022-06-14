@@ -5,8 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.tabs.TabLayoutMediator
-import com.laurentdarl.quicky.data.login.adapters.RegistrationViewPager
+import com.google.firebase.auth.FirebaseAuth
+import com.laurentdarl.quicky.data.registration.adapters.RegistrationViewPager
 import com.laurentdarl.quicky.databinding.FragmentHomeBinding
 import com.laurentdarl.quicky.presentation.fragments.registration.signin.SigninFragment
 import com.laurentdarl.quicky.presentation.fragments.registration.signup.SignUpFragment
@@ -15,9 +17,19 @@ class HomeFragment : Fragment() {
 
     private lateinit var pagerAdapter: RegistrationViewPager
     private var _binding: FragmentHomeBinding? = null
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
+    private lateinit var auth: FirebaseAuth
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        auth = FirebaseAuth.getInstance()
+        val user = auth.currentUser
+        if (user != null) {
+            val actions = HomeFragmentDirections.actionNavHomeToMainFragment()
+            findNavController().navigate(actions)
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,

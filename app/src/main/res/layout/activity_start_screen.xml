@@ -8,13 +8,11 @@
     android:background="@color/custom_color_background"
     tools:context=".presentation.activities.splash.screen.StartScreenActivity">
 
-    <TextView
-        android:id="@+id/textView"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="QUICKY FOODS"
-        android:textSize="24sp"
-        android:textColor="@color/custom_color_text_primary"
+        app:srcCompat="@drawable/ic_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

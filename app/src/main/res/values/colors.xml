@@ -11,9 +11,12 @@
 
     <!--    Custom colors-->
     <color name="custom_color_text_secondary">#464747</color>
-    <color name="custom_color_text_primary">#0A6E0E</color>
-    <color name="custom_color_primary">#FF8F00</color>
+    <color name="custom_color_text_primary">#051706</color>
+    <color name="custom_color_primary">#FF8700</color>
     <color name="custom_color_primary_light">#D3F1C43B</color>
     <color name="custom_color_background">#E663D818</color>
+    <color name="custom_color_button_background">#CED6F42E</color>
+    <color name="custom_color_inactive_button_background">#74FFFFFF</color>
     <color name="custom_color_status">#E64A9F14</color>
+    <color name="custom_color_nav_header">#DF4A9F14</color>
 </resources>
