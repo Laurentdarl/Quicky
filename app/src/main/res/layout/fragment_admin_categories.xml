@@ -6,13 +6,412 @@
     android:layout_height="match_parent"
     tools:context=".presentation.fragments.app.admin.app.AdminCategoriesFragment">
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_add_products"
+                style="@style/Category_Titles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_product"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_breakfast"
+                    android:layout_width="184dp"
+                    android:layout_height="270dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    app:contentPadding="3dp">
+
+                    <RelativeLayout
+                        android:id="@+id/breakfast"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@+id/img_breakfast"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_alignParentTop="true"
+                            android:minWidth="160dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/breakfast" />
+
+                        <TextView
+                            android:id="@+id/tv_breakfast"
+                            style="@style/Category_Titles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_breakfast"
+                            android:text="@string/breakfast" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_pastries"
+                    android:layout_width="184dp"
+                    android:layout_height="270dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    app:contentPadding="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@+id/img_pastries"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/breakfast" />
+
+                        <TextView
+                            android:id="@+id/tv_pastries"
+                            style="@style/Category_Titles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_pastries"
+                            android:text="@string/pastries" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_meats"
+                    android:layout_width="184dp"
+                    android:layout_height="270dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    app:contentPadding="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@+id/img_meats"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_alignParentTop="true"
+                            android:minWidth="160dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/breakfast" />
+
+                        <TextView
+                            android:id="@+id/tv_meats"
+                            style="@style/Category_Titles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_meats"
+                            android:text="@string/meats" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_fries"
+                    android:layout_width="184dp"
+                    android:layout_height="270dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    app:contentPadding="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@+id/img_fries"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/breakfast" />
+
+                        <TextView
+                            android:id="@+id/tv_fries"
+                            style="@style/Category_Titles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_fries"
+                            android:text="@string/fries" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_grills"
+                    android:layout_width="184dp"
+                    android:layout_height="270dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    app:contentPadding="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@+id/img_grills"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_alignParentTop="true"
+                            android:minWidth="160dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/breakfast" />
+
+                        <TextView
+                            android:id="@+id/tv_grills"
+                            style="@style/Category_Titles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_grills"
+                            android:text="@string/grills" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_drinks"
+                    android:layout_width="184dp"
+                    android:layout_height="270dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    app:contentPadding="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@+id/img_drinks"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/breakfast" />
+
+                        <TextView
+                            android:id="@+id/tv_drinks"
+                            style="@style/Category_Titles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_drinks"
+                            android:text="@string/drinks" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_desserts"
+                    android:layout_width="184dp"
+                    android:layout_height="270dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    app:contentPadding="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@+id/img_desserts"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_alignParentTop="true"
+                            android:minWidth="160dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/breakfast" />
+
+                        <TextView
+                            android:id="@+id/tv_desserts"
+                            style="@style/Category_Titles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_desserts"
+                            android:text="@string/desserts" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_soups"
+                    android:layout_width="184dp"
+                    android:layout_height="270dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    app:contentPadding="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@+id/img_soups"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/breakfast" />
+
+                        <TextView
+                            android:id="@+id/tv_soups"
+                            style="@style/Category_Titles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_soups"
+                            android:text="@string/soups" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_cakes"
+                    android:layout_width="184dp"
+                    android:layout_height="270dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    app:contentPadding="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@+id/img_cakes"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/breakfast" />
+
+                        <TextView
+                            android:id="@+id/tv_cakes"
+                            style="@style/Category_Titles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_cakes"
+                            android:text="@string/cakes" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_events"
+                    android:layout_width="184dp"
+                    android:layout_height="270dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="4dp"
+                    app:contentPadding="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@+id/img_events"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_alignParentTop="true"
+                            android:minWidth="160dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/breakfast" />
+
+                        <TextView
+                            android:id="@+id/tv_events"
+                            style="@style/Category_Titles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_events"
+                            android:text="@string/events" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

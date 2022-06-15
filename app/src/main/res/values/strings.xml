@@ -33,4 +33,16 @@
     <string name="privacy_policy">Privacy policy</string>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="repeat_password">Repeat Password</string>
+    <string name="_description">Onboarding images</string>
+    <string name="add_product">Add New Products</string>
+    <string name="events">Events</string>
+    <string name="cakes">Cakes</string>
+    <string name="soups">Soups</string>
+    <string name="desserts">Desserts</string>
+    <string name="drinks">Drinks</string>
+    <string name="grills">Grills</string>
+    <string name="fries">Fries</string>
+    <string name="meats">Meats</string>
+    <string name="pastries">Pastries</string>
+    <string name="breakfast">Breakfast</string>
 </resources>

@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
     private fun visibilityNavElements(navController: NavController) {
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
-                R.id.nav_home -> {
+                R.id.nav_home, R.id.adminCategoriesFragment -> {
                     binding.apply {
                         appBarMain.bottomAppBar.visibility = View.GONE
                         appBarMain.toolbar.visibility = View.GONE

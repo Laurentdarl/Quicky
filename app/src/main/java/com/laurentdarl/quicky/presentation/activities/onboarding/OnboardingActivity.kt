@@ -125,7 +125,7 @@ class OnboardingActivity : AppCompatActivity() {
                 } else if (i == 2) {
                     button.text = "Get Started"
                     val drawable = ContextCompat.getDrawable(this, R.drawable.ic_next)
-                    button.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null)
+                    button.setCompoundDrawablesWithIntrinsicBounds(null, null, drawable, null)
                 }
             } else {
                 imageView.setImageDrawable(

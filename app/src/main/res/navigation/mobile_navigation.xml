@@ -51,7 +51,25 @@
     <fragment
         android:id="@+id/adminCategoriesFragment"
         android:name="com.laurentdarl.quicky.presentation.fragments.app.admin.app.AdminCategoriesFragment"
-        android:label="fragment_admin_categories"
-        tools:layout="@layout/fragment_admin_categories" />
+        android:label="Categories"
+        tools:layout="@layout/fragment_admin_categories" >
+        <action
+            android:id="@+id/action_adminCategoriesFragment_to_addNewItemFragment"
+            app:destination="@id/addNewItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewItemFragment"
+        android:name="com.laurentdarl.quicky.presentation.fragments.app.admin.app.AddNewItemFragment"
+        android:label="fragment_add_new_item"
+        tools:layout="Add New Item" >
+        <action
+            android:id="@+id/action_addNewItemFragment_to_adminCategoriesFragment"
+            app:destination="@id/adminCategoriesFragment" />
+        <argument
+            android:name="category"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
 
 </navigation>
